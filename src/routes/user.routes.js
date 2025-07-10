@@ -17,18 +17,7 @@ import { upload } from "../middlewares/multer.middleware.js";
 import { verifyJWT } from "../middlewares/auth.middleware.js";
 
 const router = Router()
-import { 
-    loginUser, 
-    logoutUser,  
-    refreshAccessToken, 
-    // changeCurrentPassword, 
-    // getCurrentUser, 
-    // updateUserAvatar, 
-    // updateUserCoverImage, 
-    // getUserChannelProfile, 
-    // getWatchHistory, 
-    // updateAccountDetails
-} from "../controllers/user.controller.js";
+
 
 router.route("/register").post(
     upload.fields([
